@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <style>
+        h1 {
+            font-family: fantasy;
+            font-size: 100;
+        }
+
+        body {
+            background-color: rgb(18, 73, 175);
+        }
+
+        p {
+            color: white;
+        }
+
+        button {
+            width: 90%;
+            height: 100px;
+            font-size: 90px;
+        }
+    </style>
+
+    <script>
+        let counter = 0;
+        // Function to increment the counter
+        function increment() {
+            // Increment the counter
+            counter += 1;
+
+            document.getElementById('counter').innerHTML = counter;
+
+            // Return the counter
+            console.log(counter);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Counter App</h1>
+    <p>Counter: <span id="counter">0</span></p>
+    <button id="increment" onclick="increment()">Increment</button>
+</body>
+
+</html>

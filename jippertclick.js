@@ -10,3 +10,13 @@ function increment() {
   // Return the counter
   console.log(counter);
 }
+
+function reset() {
+  // reset the counter
+  counter = 0;
+
+  document.getElementById("counter").innerHTML = counter;
+
+  // Return the counter
+  console.log(counter);
+}

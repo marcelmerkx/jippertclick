@@ -1,20 +1,30 @@
 <html>
 
-<head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="jippertclick.js"></script>
-</head>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita One" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <h1>Counter App</h1>
-  <p>Counter: <span id="counter">0</span></p>
-  <div class="container">
-    <div class="center">
-      <button id="increment" onclick="increment()"></button>
-      <button id="reset" onclick="reset()">reset</button>
+  <body>
+    <h1>Counter App</h1>
+    <p>Counter: <span id="teller">0</span></p>
+    <div class="container">
+      <div class="center">
+        <div id="clock">0:00</div>
+      </div>
     </div>
-  </div>
-</body>
+    <div class="container">
+      <div class="center">
+        <button id="increment" onclick="increment()">klik</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="center">
+        <button id="reset" onclick="reset()">reset</button>
+      </div>
+    </div>
+
+    <script src="jippertclick.js"></script>
+  </body>
 
 </html>

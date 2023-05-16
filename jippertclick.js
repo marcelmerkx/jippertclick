@@ -1,22 +1,30 @@
-let counter = 0;
+let teller = 0;
+const clockElement = document.getElementById("clock");
+const tellerElement = document.getElementById("teller");
 
-// Function to increment the counter
 function increment() {
-  // Increment the counter
-  counter += 1;
-
-  document.getElementById("counter").innerHTML = counter;
-
-  // Return the counter
-  console.log(counter);
+  teller += 1;
+  tellerElement.innerHTML = teller;
 }
 
 function reset() {
-  // reset the counter
-  counter = 0;
-
-  document.getElementById("counter").innerHTML = counter;
-
-  // Return the counter
-  console.log(counter);
+  teller = 0;
+  tellerElement.innerHTML = teller;
+  tellerElement.onclick = "increment()"
 }
+
+async function clock(){
+  for (let i = 1; i <= 10; i++) {
+  
+      clockElement.innerHTML = Number(i/10).toFixed(1);
+      await new Promise(r => setTimeout( r, 100 ));
+      
+    }    
+  }
+
+clock().then(() => {
+  tellerElement.onclick = '';
+  cps = teller / 10;
+  console.log(cps);
+  clockElement.innerHTML = 'CPS = ' + cps;
+});

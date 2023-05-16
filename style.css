@@ -1,7 +1,7 @@
 .container {
   height: 200px;
   position: relative;
-  /* border: 3px solid green; */
+  font-size: 120px;
 }
 
 body {
@@ -33,7 +33,6 @@ button {
   height: 200px;
   color: #ffffff;
   text-align: center;
-  
   -webkit-transition: all 0.5s; 
   -moz-transition: all 0.5s; 
   -o-transition: all 0.5s; 
@@ -64,8 +63,4 @@ button.reset {
 
 button:hover {
   background-color: green;
-}
-
-#clock {
-  font-size: 120px;
 }
